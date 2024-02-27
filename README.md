@@ -77,76 +77,85 @@ If Piece Found: Solved.
 
 #### Array adress:
 <img alt='Piece#00' src='src/img/IMG00.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-0011 | 0 | 0 | 1 | 1
-0121 | 0 | 1 | 2 | 1
-0210 | 0 | 2 | 1 | 0
-0331 | 0 | 3 | 3 | 1
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 0011 | 0 | 0 | 1 | 1 |
+| 0121 | 0 | 1 | 2 | 1 |
+| 0210 | 0 | 2 | 1 | 0 |
+| 0331 | 0 | 3 | 3 | 1 |
 
 <img alt='Piece#01' src='src/img/IMG01.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-1020 | 1 | 0 | 2 | 0
-1101 | 1 | 1 | 0 | 1
-1231 | 1 | 2 | 3 | 1
-1330 | 1 | 3 | 3 | 0
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 1020 | 1 | 0 | 2 | 0 |
+| 1101 | 1 | 1 | 0 | 1 |
+| 1231 | 1 | 2 | 3 | 1 |
+| 1330 | 1 | 3 | 3 | 0 |
 
 <img alt='Piece#02' src='src/img/IMG02.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-2020 | 2 | 0 | 2 | 0
-2100 | 2 | 1 | *0* | *0*
-2230 | 2 | 2 | 3 | 0
-2300 | 2 | 3 | *0* | *0*
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 2020 | 2 | 0 | 2 | 0 |
+| 2100 | 2 | 1 | *0* | *0* |
+| 2230 | 2 | 2 | 3 | 0 |
+| 2300 | 2 | 3 | *0* | *0* |
 
 <img alt='Piece#03' src='src/img/IMG03.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-3010 | 3 | 0 | 1 | 0
-3100 | 3 | 1 | 0 | 0
-3201 | 3 | 2 | 0 | 1
-3331 | 3 | 3 | 3 | 1
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 3010 | 3 | 0 | 1 | 0 |
+| 3100 | 3 | 1 | 0 | 0 |
+| 3201 | 3 | 2 | 0 | 1 |
+| 3331 | 3 | 3 | 3 | 1 |
 
 <img alt='Piece#04' src='src/img/IMG04.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-4021 | 4 | 0 | 2 | 1
-4101 | 4 | 1 | 0 | 1
-4211 | 4 | 2 | *1* | *1*
-4311 | 4 | 3 | *1* | *1*
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 4021 | 4 | 0 | 2 | 1 |
+| 4101 | 4 | 1 | 0 | 1 |
+| 4211 | 4 | 2 | *1* | *1* |
+| 4311 | 4 | 3 | *1* | *1* |
 
 <img alt='Piece#05' src='src/img/IMG05.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-5000 | 5 | 0 | 0 | 0
-5121 | 5 | 1 | 2 | 1
-5201 | 5 | 2 | 0 | 1
-5331 | 5 | 3 | 3 | 1
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 5000 | 5 | 0 | 0 | 0 |
+| 5121 | 5 | 1 | 2 | 1 |
+| 5201 | 5 | 2 | 0 | 1 |
+| 5331 | 5 | 3 | 3 | 1 |
 
 <img alt='Piece#06' src='src/img/IMG06.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-6010 | 6 | 0 | *1* | *0*
-6130 | 6 | 1 | 3 | 0
-6220 | 6 | 2 | 2 | 0
-6310 | 6 | 3 | *1* | *0*
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 6010 | 6 | 0 | *1* | *0* |
+| 6130 | 6 | 1 | 3 | 0 |
+| 6220 | 6 | 2 | 2 | 0 |
+| 6310 | 6 | 3 | *1* | *0* |
 
 <img alt='Piece#07' src='src/img/IMG07.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-7011 | 7 | 0 | 1 | 1
-7130 | 7 | 1 | 3 | 0
-7220 | 7 | 2 | 2 | 0
-7321 | 7 | 3 | 2 | 1
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 7011 | 7 | 0 | 1 | 1 |
+| 7130 | 7 | 1 | 3 | 0 |
+| 7220 | 7 | 2 | 2 | 0 |
+| 7321 | 7 | 3 | 2 | 1 |
 
 <img alt='Piece#08' src='src/img/IMG08.jpg' width='100' />
-uID | piece | side | type | variant
-----:|:-----:|:----:|:----:|:-------
-8020 | 8 | 0 | 2 | 0
-8130 | 8 | 1 | 3 | 0
-8210 | 8 | 2 | 1 | 0
-8301 | 8 | 3 | 0 | 1
+
+| uID | piece | side | type | variant |
+|:---:|:-----:|:----:|:----:|:-------:|
+| 8020 | 8 | 0 | 2 | 0 |
+| 8130 | 8 | 1 | 3 | 0 |
+| 8210 | 8 | 2 | 1 | 0 |
+| 8301 | 8 | 3 | 0 | 1 |
 
 ## Pieces Location Adress Legend
 **Row:** [0/2] 
@@ -154,8 +163,8 @@ uID | piece | side | type | variant
 **Rotation:** [0/3]
 
 ### Position:
-| Cell | 0 | 1 | 2 |
-|:-:|:-:|:-:|:-:|
+|Cell| 0 | 1 | 2 |
+|:--:|:--:|:--:|:--:|
 |Row | 00 | 01 | 02 |
 |Row | 00 | 01 | 02 |
 |Row | 00 | 01 | 02 |
@@ -278,10 +287,10 @@ _[PieceData] = [PieceData]
 ```
 
 ### Priority: 
- +Pri = if a piece connects to another piece (Range: 1-4)
- -Pri = if no connects (Range: 1-4)
- 
- +Pri = if connected pieces connect to another piece (Range: 1 + 8)
- -Pri = if no connects (Range: 1-4)
-
-With Priority of 8 = Found 1 Solved State
+ +Pri = if a piece connects to another piece (Range: 1-4)   
+ -Pri = if no connects (Range: 1-4)   
+    
+ +Pri = if connected pieces connect to another piece (Range: 1 + 8)   
+ -Pri = if no connects (Range: 1-4)   
+   
+With Priority of 8 = Found 1 Solved State   
