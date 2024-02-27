@@ -28,24 +28,29 @@ If Piece Found: Solved.
 
 ## Board & Pieces
 ### Board
-**Row:** [#0-2] 
-**Cell:** [#0-2]
+**Row:** [0/2] 
+**Cell:** [0/2]
 **Occupied:** [True/False]
 
 ### Pieces
 **uID:** [Pieces][Sides][Types][Variant]
-**uPos:** [Row][Cell][Rotation]
++ Piece: [0/8] 
++ Side: [0/3]
++ Type: [0/3] 
++ Variant: [-1/1]
 
-### Placement
-**Possible Positions Array:** [Row][Cell][Occupied=False]
-**Priority:** 0 + 8 = Priority given to a Piece for a specific place on the board
-**Locked:** True/False = Locked Pieces in position for current solution
+**uPos:** [Row][Cell][Rotation]
++ Row: [0/2]
++ Cell: [0/2]
++ Rotation: [0/3]
+
+**Possible Positions Array:** [Priority][Piece0][Piece1][~]
++ Priority: [0/8] = Priority given to a Piece for a specific place on the board
++ Piece[] = Connecting Piece 1
++ Piece[] = Connecting Piece 2
++ ...more Pieces that connect..
 
 ## Pieces Array Adress Legend
-**Piece:** [#0-8] 
-**Side:** [#0-3]
-**Type:** [#0-3] 
-**Variant:** [#0-1]
 ### Pieces 
 0 <img alt='Piece#00' src='src/img/IMG00.jpg' width='50' />
 1 <img alt='Piece#01' src='src/img/IMG01.jpg' width='50' />
@@ -57,78 +62,96 @@ If Piece Found: Solved.
 7 <img alt='Piece#07' src='src/img/IMG07.jpg' width='50' />
 8 <img alt='Piece#08' src='src/img/IMG08.jpg' width='50' />
 ### Sides: (arguments 1-4: Same behaviour as CSS Borders?)
-0. Top
-1. Right
-2. Bottom
-3. Left
++ 0 Top
++ 1 Right
++ 2 Bottom
++ 3 Left
 ### Types:
-0. Goldfish
-1. Seahorse
-2. Octopus
-3. RedFish
++ 0 Goldfish
++ 1 Seahorse
++ 2 Octopus
++ 3 RedFish
 ### Variants:
-0. Head
-1. Body
++ -1 Head
++ 1 Body
 
 #### Array adress:
 <img alt='Piece#00' src='src/img/IMG00.jpg' width='100' />
-uid: #0011 + piece[0].side[0].type[1].variant[1]
-uid: #0121 + piece[0].side[1].type[2].variant[1]
-uid: #0210 + piece[0].side[2].type[1].variant[0]
-uid: #0331 + piece[0].side[3].type[3].variant[1]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+0011 | 0 | 0 | 1 | 1
+0121 | 0 | 1 | 2 | 1
+0210 | 0 | 2 | 1 | 0
+0331 | 0 | 3 | 3 | 1
 
 <img alt='Piece#01' src='src/img/IMG01.jpg' width='100' />
-uid: #1020 + piece[1].side[0].type[2].variant[0]
-uid: #1101 + piece[1].side[1].type[0].variant[1]
-uid: #1231 + piece[1].side[2].type[3].variant[1]
-uid: #1330 + piece[1].side[3].type[3].variant[0]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+1020 | 1 | 0 | 2 | 0
+1101 | 1 | 1 | 0 | 1
+1231 | 1 | 2 | 3 | 1
+1330 | 1 | 3 | 3 | 0
 
 <img alt='Piece#02' src='src/img/IMG02.jpg' width='100' />
-uid: #2020 + piece[2].side[0].type[2].variant[0]
-uid: #2100 + piece[2].side[1,3].type[0].variant[0]
-uid: #2230 + piece[2].side[2].type[3].variant[0]
-uid: #2300 + piece[2].side[1,3].type[0].variant[0]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+2020 | 2 | 0 | 2 | 0
+2100 | 2 | 1 | *0* | *0*
+2230 | 2 | 2 | 3 | 0
+2300 | 2 | 3 | *0* | *0*
 
 <img alt='Piece#03' src='src/img/IMG03.jpg' width='100' />
-uid: #3010 + piece[3].side[0].type[1].variant[0]
-uid: #3100 + piece[3].side[1].type[0].variant[0]
-uid: #3201 + piece[3].side[2].type[0].variant[1]
-uid: #3331 + piece[3].side[3].type[3].variant[1]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+3010 | 3 | 0 | 1 | 0
+3100 | 3 | 1 | 0 | 0
+3201 | 3 | 2 | 0 | 1
+3331 | 3 | 3 | 3 | 1
 
 <img alt='Piece#04' src='src/img/IMG04.jpg' width='100' />
-uid: #4021 + piece[4].side[0].type[2].variant[1]
-uid: #4101 + piece[4].side[1].type[0].variant[1]
-uid: #4211 + piece[4].side[2,3].type[1].variant[1]
-uid: #4311 + piece[4].side[2,3].type[1].variant[1]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+4021 | 4 | 0 | 2 | 1
+4101 | 4 | 1 | 0 | 1
+4211 | 4 | 2 | *1* | *1*
+4311 | 4 | 3 | *1* | *1*
 
 <img alt='Piece#05' src='src/img/IMG05.jpg' width='100' />
-uid: #5000 + piece[5].side[0].type[0].variant[0]
-uid: #5121 + piece[5].side[1].type[2].variant[1]
-uid: #5201 + piece[5].side[2].type[0].variant[1]
-uid: #5331 + piece[5].side[3].type[3].variant[1]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+5000 | 5 | 0 | 0 | 0
+5121 | 5 | 1 | 2 | 1
+5201 | 5 | 2 | 0 | 1
+5331 | 5 | 3 | 3 | 1
 
 <img alt='Piece#06' src='src/img/IMG06.jpg' width='100' />
-uid: #6010 + piece[6].side[0,3].type[1].variant[0]
-uid: #6130 + piece[6].side[1].type[3].variant[0]
-uid: #6220 + piece[6].side[2].type[2].variant[0]
-uid: #6310 + piece[6].side[0,3].type[1].variant[0]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+6010 | 6 | 0 | *1* | *0*
+6130 | 6 | 1 | 3 | 0
+6220 | 6 | 2 | 2 | 0
+6310 | 6 | 3 | *1* | *0*
 
 <img alt='Piece#07' src='src/img/IMG07.jpg' width='100' />
-uid: #7011 + piece[7].side[0].type[1].variant[1]
-uid: #7130 + piece[7].side[1].type[3].variant[0]
-uid: #7220 + piece[7].side[2].type[2].variant[0]
-uid: #7321 + piece[7].side[3].type[2].variant[1]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+7011 | 7 | 0 | 1 | 1
+7130 | 7 | 1 | 3 | 0
+7220 | 7 | 2 | 2 | 0
+7321 | 7 | 3 | 2 | 1
 
 <img alt='Piece#08' src='src/img/IMG08.jpg' width='100' />
-uid: #8020 + piece[8].side[0].type[2].variant[0]
-uid: #8130 + piece[8].side[1].type[3].variant[0]
-uid: #8210 + piece[8].side[2].type[1].variant[0]
-uid: #8301 + piece[8].side[3].type[0].variant[1]
+ uID | piece | side | type | variant
+----:|:-----:|:----:|:----:|:-------
+8020 | 8 | 0 | 2 | 0
+8130 | 8 | 1 | 3 | 0
+8210 | 8 | 2 | 1 | 0
+8301 | 8 | 3 | 0 | 1
 
 ## Pieces Location Adress Legend
-**Row:** [#0-2] 
-**Cell:** [#0-2] 
-**Rotation:** [#0-3]
+**Row:** [0/2] 
+**Cell:** [0/2] 
+**Rotation:** [0/3]
 
 ### Position:
 | Cell | 0 | 1 | 2 |
@@ -137,26 +160,38 @@ uid: #8301 + piece[8].side[3].type[0].variant[1]
 |Row | 00 | 01 | 02 |
 |Row | 00 | 01 | 02 |
  
-
 ### Rotation: 
-0. = 0°
-1. = 90°
-2. = 180°
-3. = 270°
++ 0 = 0°
++ 1 = 90°
++ 2 = 180°
++ 3 = 270°
 
 ### Location Adress
-+ uid: #000 X:0 Y:0 Rot:0
-+ uid: #010 X:0 Y:1 Rot:0
-+ uid: #020 X:0 Y:2 Rot:0
-+ uid: #100 X:1 Y:0 Rot:0
-+ uid: #110 X:1 Y:1 Rot:0
-+ uid: #120 X:1 Y:2 Rot:0
-+ uid: #200 X:2 Y:0 Rot:0
-+ uid: #210 X:2 Y:1 Rot:0
-+ uid: #220 X:2 Y:2 Rot:0
-
+uID | X | Y | Rot 
+---:|:-:|:-:|:---
+000 | 0 | 0 | 0 
+010 | 0 | 1 | 0 
+020 | 0 | 2 | 0 
+100 | 1 | 0 | 0 
+110 | 1 | 1 | 0 
+120 | 1 | 2 | 0 
+200 | 2 | 0 | 0 
+210 | 2 | 1 | 0 
+220 | 2 | 2 | 0 
 
 ## Checks & Priority
+Input Request: [0/8][0/3][0/2][-1/1]
+Select a Starting Piece
+ With Starting Rotation
+ On Starting Row
+ And Starting Cell
+Save to [Previous Request Array]
+
+[Input Rquest Array] Starting Piece with Rotation, on Row and Cell Position
+[Previous Request Array] Save to help users try new input
+[Unoccupied Positions Array] Array of empty Positions
+[Current Board Status] State of the Board, filled with the placed Pieces.
+
 > We look through all the Unoccupied Tiles []
 > We look through all the Unused Pieces []
 > We Select a starting Piece00, with a rotation on a Starting position.
@@ -178,7 +213,6 @@ uid: #8301 + piece[8].side[3].type[0].variant[1]
 
 > Step Second Neighbors
 > We check if the hypothetical neighbours can connect in the current state
-> 
 
 > We go through all Possible Choices[] on Possible Position[]
 > We Look at each Neighbor tile
@@ -187,30 +221,23 @@ uid: #8301 + piece[8].side[3].type[0].variant[1]
 
 > For each Possible Choice we check 
 > If the can +Priority for the Possible Choice [Piece]
-> If the can't -+ Priority for the Possible Choice [Piece]
+> If the can't -Priority for the Possible Choice [Piece]
 
 > Step Third Neigbors
-> ...
+> All Neighbor Pieces01 created corners, these corners need to corrospond with an unused Piece.
+> If this is not possible the Neighbor Pieces01 get -Priority each
+> If this is possible the Neighbors Pieces01 and Piece00 get +Priority each: A complete 2x2 square has been created. 
 
 > Step Priority Check 
 > We Select a Possible Choice with the Highest Priority Ranking
-> We Place the Second Piece
+> PriorityRank Ranking of the Piece, Higher Priority Rank is greater chance of selection.
+> We create a hypothetical choice and try and complete the 3x3 square.
+> If not possible either -priority or Add to Impossible Array
+> If possible Solved. Add to Solved Array.
+> Apply hypothetical positions and rotations to pieces
 
-[Input Rquest Array] Starting Piece with Rotation, on Row and Cell Position
-[Previous Request Array] Save to help users try new input
-[Unoccupied Positions Array] Array of empty Positions
-[Current Board Status] State of the Board, filled with the placed Pieces.
-PriorityRank Ranking of the Piece, Higher Priority Rank is greater chance of selection.
-
-
-```Input Request: [0-8][0-3][0-2][0-2]
-Select a Starting Piece
- With Starting Rotation
- On Starting Row
- And Starting Cell
-Save to [Previous Request Array]
-
-Checks:
+### Checks:
+```
 Check the Neighborhood for Unoccupied Tiles. Save these Tiles to the Unoccupied Positions Array.
 // TABLE CHECK ()
 For (Row < 2)
@@ -249,7 +276,8 @@ _[PieceData] = [PieceData]
 
 // 
 ```
-Priority: 
+
+### Priority: 
  +Pri = if a piece connects to another piece (Range: 1-4)
  -Pri = if no connects (Range: 1-4)
  
