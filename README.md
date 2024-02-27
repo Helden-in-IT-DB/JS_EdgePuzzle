@@ -77,7 +77,7 @@ If Piece Found: Solved.
 
 #### Array adress:
 <img alt='Piece#00' src='src/img/IMG00.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 0011 | 0 | 0 | 1 | 1
 0121 | 0 | 1 | 2 | 1
@@ -85,7 +85,7 @@ If Piece Found: Solved.
 0331 | 0 | 3 | 3 | 1
 
 <img alt='Piece#01' src='src/img/IMG01.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 1020 | 1 | 0 | 2 | 0
 1101 | 1 | 1 | 0 | 1
@@ -93,7 +93,7 @@ If Piece Found: Solved.
 1330 | 1 | 3 | 3 | 0
 
 <img alt='Piece#02' src='src/img/IMG02.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 2020 | 2 | 0 | 2 | 0
 2100 | 2 | 1 | *0* | *0*
@@ -101,7 +101,7 @@ If Piece Found: Solved.
 2300 | 2 | 3 | *0* | *0*
 
 <img alt='Piece#03' src='src/img/IMG03.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 3010 | 3 | 0 | 1 | 0
 3100 | 3 | 1 | 0 | 0
@@ -109,7 +109,7 @@ If Piece Found: Solved.
 3331 | 3 | 3 | 3 | 1
 
 <img alt='Piece#04' src='src/img/IMG04.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 4021 | 4 | 0 | 2 | 1
 4101 | 4 | 1 | 0 | 1
@@ -117,7 +117,7 @@ If Piece Found: Solved.
 4311 | 4 | 3 | *1* | *1*
 
 <img alt='Piece#05' src='src/img/IMG05.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 5000 | 5 | 0 | 0 | 0
 5121 | 5 | 1 | 2 | 1
@@ -125,7 +125,7 @@ If Piece Found: Solved.
 5331 | 5 | 3 | 3 | 1
 
 <img alt='Piece#06' src='src/img/IMG06.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 6010 | 6 | 0 | *1* | *0*
 6130 | 6 | 1 | 3 | 0
@@ -133,7 +133,7 @@ If Piece Found: Solved.
 6310 | 6 | 3 | *1* | *0*
 
 <img alt='Piece#07' src='src/img/IMG07.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 7011 | 7 | 0 | 1 | 1
 7130 | 7 | 1 | 3 | 0
@@ -141,7 +141,7 @@ If Piece Found: Solved.
 7321 | 7 | 3 | 2 | 1
 
 <img alt='Piece#08' src='src/img/IMG08.jpg' width='100' />
- uID | piece | side | type | variant
+uID | piece | side | type | variant
 ----:|:-----:|:----:|:----:|:-------
 8020 | 8 | 0 | 2 | 0
 8130 | 8 | 1 | 3 | 0
