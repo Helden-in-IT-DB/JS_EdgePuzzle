@@ -1,74 +1,57 @@
 [
+        { "piece": 0, "side": 0, "type": 1, "variant": 1 },
+        { "piece": 0, "side": 1, "type": 2, "variant": 1 },
+        { "piece": 0, "side": 2, "type": 1, "variant": 0 },
+        { "piece": 0, "side": 3, "type": 3, "variant": 1 },
+    
+
+
     {
-        "id": " 00",
-        "name": "Img00.jpg",
-        "up":    {"Tag":"SeaH", "Type": "B"},
-        "right": {"Tag":"Octo", "Type": "B"},
-        "down":  {"Tag":"SeaH", "Type": "A"},
-        "left":  {"Tag":"RedF", "Type": "B"}
+        "piece": 1,
+        "side": 0,
+        "type": 2,
+        "variant": 0
     },
     {
-        "id": "01",
-        "name": "Img01.jpg",
-        "up":    {"Tag":"Octo", "Type": "A"},
-        "right": {"Tag":"GoldF", "Type": "B"},
-        "down":  {"Tag":"RedF", "Type": "B"},
-        "left":  {"Tag":"RedF", "Type": "A"}
+        "piece": 1,
+        "side": 1,
+        "type": 0,
+        "variant": 1
     },
     {
-        "id": "02",
-        "name": "Img02.jpg",
-        "up":    {"Tag":"Octo", "Type": "A"},
-        "right": {"Tag":"GoldF", "Type": "A"},
-        "down":  {"Tag":"RedF", "Type": "A"},
-        "left":  {"Tag":"GoldF", "Type": "A"}
+        "piece": 1,
+        "side": 2,
+        "type": 3,
+        "variant": 1
     },
     {
-        "id": "03",
-        "name": "Img03.jpg",
-        "up":    {"Tag":"SeaH", "Type": "A"},
-        "right": {"Tag":"GoldF", "Type": "A"},
-        "down":  {"Tag":"GoldF", "Type": "B"},
-        "left":  {"Tag":"RedF", "Type": "B"}
+        "piece": 1,
+        "side": 3,
+        "type": 3,
+        "variant": 0
     },
     {
-        "id": "04",
-        "name": "Img04.jpg",
-        "up":    {"Tag":"Octo", "Type": "B"},
-        "right": {"Tag":"GoldF", "Type": "B"},
-        "down":  {"Tag":"SeaH", "Type": "B"},
-        "left":  {"Tag":"SeaH", "Type": "B"}
+        "piece": 2,
+        "side": 0,
+        "type": 2,
+        "variant": 0
     },
     {
-        "id": "05",
-        "name": "Img05.jpg",
-        "up":    {"Tag":"GoldF", "Type": "A"},
-        "right": {"Tag":"Octo", "Type": "B"},
-        "down":  {"Tag":"GoldF", "Type": "B"},
-        "left":  {"Tag":"RedF", "Type": "B"}
+        "piece": 2,
+        "side": 1,
+        "type": 0,
+        "variant": 0
     },
     {
-        "id": "06",
-        "name": "Img06.jpg",
-        "up":    {"Tag":"SeaH", "Type": "B"},
-        "right": {"Tag":"SH_B", "Type": "B"},
-        "down":  {"Tag":"SH_B", "Type": "B"},
-        "left":  {"Tag":"SH_B", "Type": "B"}
+        "piece": 2,
+        "side": 2,
+        "type": 3,
+        "variant": 0
     },
     {
-        "id": "07",
-        "name": "Img07.jpg",
-        "up":    {"Tag":"SH_B", "Type": "B"},
-        "right": {"Tag":"SH_B", "Type": "B"},
-        "down":  {"Tag":"SH_B", "Type": "B"},
-        "left":  {"Tag":"SH_B", "Type": "B"}
-    },
-    {
-        "id": "08",
-        "name": "Img08.jpg",
-        "up":    {"Tag":"SH_B", "Type": "B"},
-        "right": {"Tag":"SH_B", "Type": "B"},
-        "down":  {"Tag":"SH_B", "Type": "B"},
-        "left":  {"Tag":"SH_B", "Type": "B"}
+        "piece": 2,
+        "side": 3,
+        "type": 0,
+        "variant": 0
     }
 ]
