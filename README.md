@@ -36,8 +36,7 @@ If Piece Found: Solved.
 **uID:** [Pieces][Sides][Types][Variant]
 + Piece: [0/8] 
 + Side: [0/3]
-+ Type: [0/3] 
-+ Variant: [-1/1]
++ Type: [-4/4] 
 
 **uPos:** [Row][Cell][Rotation]
 + Row: [0/2]
@@ -67,95 +66,92 @@ If Piece Found: Solved.
 + 2 Bottom
 + 3 Left
 ### Types:
-+ 0 Goldfish
-+ 1 Seahorse
-+ 2 Octopus
-+ 3 RedFish
-### Variants:
-+ -1 Head
-+ 1 Body
++ 1 Goldgish Head
++ -1 Goldfish Body
++ 2 Seahorse Head
++ -2 Seahorse Body
++ 3 Octopus Head
++ -3 Octopus Body
++ 4 RedFish Head
++ -4 RedFish Body
 
 #### Array adress:
-<img alt='Piece#00' src='src/img/IMG00.jpg' width='100' />
+<img alt='Piece#00' src='src/img/IMG00.jpg' width='100' align='right'/>
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 00-2 | 0 | 0 | -2 |
+| 01-3 | 0 | 1 | -3 |
+| 02 2 | 0 | 2 | 2 |
+| 03-4 | 0 | 3 | -4 |
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 0011 | 0 | 0 | 1 | 1 |
-| 0121 | 0 | 1 | 2 | 1 |
-| 0210 | 0 | 2 | 1 | 0 |
-| 0331 | 0 | 3 | 3 | 1 |
+<img alt='Piece#01' src='src/img/IMG01.jpg' width='100' align='right'/>
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 10 3 | 1 | 0 | 3 |
+| 11-1 | 1 | 1 | -1 |
+| 12-4 | 1 | 2 | -4 |
+| 13 4 | 1 | 3 | 4 |
 
-<img alt='Piece#01' src='src/img/IMG01.jpg' width='100' />
+<img alt='Piece#02' src='src/img/IMG02.jpg' width='100' align='right'/>
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 20 3 | 2 | 0 | 3 |
+| **21 1** | 2 | 1 | 1 |
+| 22 4 | 2 | 2 | 4 |
+| **23 1** | 2 | 3 | 1 |
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 1020 | 1 | 0 | 2 | 0 |
-| 1101 | 1 | 1 | 0 | 1 |
-| 1231 | 1 | 2 | 3 | 1 |
-| 1330 | 1 | 3 | 3 | 0 |
+<img alt='Piece#03' src='src/img/IMG03.jpg' width='100' align='right'/>
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 30 2 | 3 | 0 | 2 |
+| 31 1 | 3 | 1 | 1 |
+| 32-1 | 3 | 2 | -1 |
+| 33-4 | 3 | 3 | -4 |
 
-<img alt='Piece#02' src='src/img/IMG02.jpg' width='100' />
+<img alt='Piece#04' src='src/img/IMG04.jpg' width='100' align='right'/>
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 2020 | 2 | 0 | 2 | 0 |
-| 2100 | 2 | 1 | *0* | *0* |
-| 2230 | 2 | 2 | 3 | 0 |
-| 2300 | 2 | 3 | *0* | *0* |
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 40-3 | 4 | 0 | -3 |
+| 41-1 | 4 | 1 | -1 |
+| **42-2** | 4 | 2 | -2 |
+| **43-2** | 4 | 3 | -2 |
 
-<img alt='Piece#03' src='src/img/IMG03.jpg' width='100' />
+<img alt='Piece#05' src='src/img/IMG05.jpg' width='100' align='right'/>
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 3010 | 3 | 0 | 1 | 0 |
-| 3100 | 3 | 1 | 0 | 0 |
-| 3201 | 3 | 2 | 0 | 1 |
-| 3331 | 3 | 3 | 3 | 1 |
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 50 1 | 5 | 0 | 1 |
+| 51-3 | 5 | 1 | -3 |
+| 52-1 | 5 | 2 | -1 |
+| 53-4 | 5 | 3 | -4 |
 
-<img alt='Piece#04' src='src/img/IMG04.jpg' width='100' />
+<img alt='Piece#06' src='src/img/IMG06.jpg' width='100' align='right'/>
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 4021 | 4 | 0 | 2 | 1 |
-| 4101 | 4 | 1 | 0 | 1 |
-| 4211 | 4 | 2 | *1* | *1* |
-| 4311 | 4 | 3 | *1* | *1* |
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 60 2 | 6 | 0 | 2 |
+| 61 4 | 6 | 1 | 4 |
+| 62 3 | 6 | 2 | 3 |
+| 63 2 | 6 | 3 | 2 |
 
-<img alt='Piece#05' src='src/img/IMG05.jpg' width='100' />
+<img alt='Piece#07' src='src/img/IMG07.jpg' width='100' align='right'/>
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 5000 | 5 | 0 | 0 | 0 |
-| 5121 | 5 | 1 | 2 | 1 |
-| 5201 | 5 | 2 | 0 | 1 |
-| 5331 | 5 | 3 | 3 | 1 |
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 70-2 | 7 | 0 | -2 |
+| 71 4 | 7 | 1 | 4 |
+| 72 3 | 7 | 2 | 3 |
+| 73-3 | 7 | 3 | -3 |
 
-<img alt='Piece#06' src='src/img/IMG06.jpg' width='100' />
+<img alt='Piece#08' src='src/img/IMG08.jpg' width='100' align='right'/>
 
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 6010 | 6 | 0 | *1* | *0* |
-| 6130 | 6 | 1 | 3 | 0 |
-| 6220 | 6 | 2 | 2 | 0 |
-| 6310 | 6 | 3 | *1* | *0* |
-
-<img alt='Piece#07' src='src/img/IMG07.jpg' width='100' />
-
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 7011 | 7 | 0 | 1 | 1 |
-| 7130 | 7 | 1 | 3 | 0 |
-| 7220 | 7 | 2 | 2 | 0 |
-| 7321 | 7 | 3 | 2 | 1 |
-
-<img alt='Piece#08' src='src/img/IMG08.jpg' width='100' />
-
-| uID | piece | side | type | variant |
-|:---:|:-----:|:----:|:----:|:-------:|
-| 8020 | 8 | 0 | 2 | 0 |
-| 8130 | 8 | 1 | 3 | 0 |
-| 8210 | 8 | 2 | 1 | 0 |
-| 8301 | 8 | 3 | 0 | 1 |
+| uID | piece | side | type |
+|:---:|:-----:|:----:|:----:|
+| 80 3 | 8 | 0 | 3 |
+| 81 4 | 8 | 1 | 4 |
+| 82 2 | 8 | 2 | 2 |
+| 83-1 | 8 | 3 | -1 |
 
 ## Pieces Location Adress Legend
 **Row:** [0/2] 
@@ -216,16 +212,16 @@ Save to [Previous Request Array]
 
 > Next we decide which piece to play next.
 > We look at all Unused Pieces []
-> We search for the negative Variant of the previous Piece00 Symbols []
-> also using Rotations
+> We search for the negative Type of the previous Piece00 Symbols []
+> Rotating Piece00 for each option
 > We Save each Piece01 as a Possible Choice []
 
 > Step Second Neighbors
 > We check if the hypothetical neighbours can connect in the current state
-
 > We go through all Possible Choices[] on Possible Position[]
-> We Look at each Neighbor tile
-> We choose a fitting piece
+> We skip the previous Card(s)
+> We Look at each Neighbor tile with X+1/-1 or Y+1/-1
+> We choose a fitting Piece02
 > Next we check all Neighbors
 
 > For each Possible Choice we check 
@@ -233,7 +229,7 @@ Save to [Previous Request Array]
 > If the can't -Priority for the Possible Choice [Piece]
 
 > Step Third Neigbors
-> All Neighbor Pieces01 created corners, these corners need to corrospond with an unused Piece.
+> All Neighbors with Piece00 and Pieces01 created corners, these corners need to corrospond with an unused Piece.
 > If this is not possible the Neighbor Pieces01 get -Priority each
 > If this is possible the Neighbors Pieces01 and Piece00 get +Priority each: A complete 2x2 square has been created. 
 
@@ -268,9 +264,7 @@ If ([Row][Cell] [Piece][Side][Type] == [Row][Cell][Rotation] [Piece][Side][Type]
 
 Check if the Type is the Same, next check if the variant is the negative of the other.
 // TYPE CHECK ()
-If ([Piece][Side][Type] == [Piece][Side][Type])
-// VARIANT CHECK ()
- If ([Variant] *-1 [Variant])
+If ([Piece][Side][Type] == [Piece][Side][Type] * -1)
 = Complete Symbol: Increase Priority
 
 // TABLE CHECK ()
